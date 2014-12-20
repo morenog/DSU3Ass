@@ -31,6 +31,5 @@ You should create one R script called run_analysis.R that does the following.
 - A **tidydata.txt** file will be generated as the final output of the script.  This will be created in the R working directory.
 - The scriptfile calls the required packages.
 
-
 ###### end of file
 
