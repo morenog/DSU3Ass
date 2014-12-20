@@ -33,5 +33,18 @@ For each record in the dataset it is provided:
 Human Activity Recognition on Smartphones using a Multiclass HardwareFriendly
 Support Vector Machine. International Workshop of Ambient Assisted Living (IWAAL 2012). VitoriaGasteiz, Spain. Dec 2012
 
-### Transformations
--
+### Data Output
+
+**Data Transormations:**
+The run_analysis.R script:
+- Combines the data from the train and test data sets, to form one data set.
+- Only utilises the mean and sd meausrements {...-mean()-X, ...-mean()-Y, ...-mean()-Z, ...-sd()-X, ...-sd()-Y, ...-sd()-Z }
+- Generates a text file tidydata.txt containing a tidy data set with the average of each variable for each activity and each subject.
+
+**TidyData.txt** Data description
+- **SubjectID** A numeric integer value identifying the Subject. Range from 1 to 30.
+- **ActivityClass** A text label identifying the activity {WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING}
+- **variable** A text label of the variable in question (refer to the **features_info.txt** file in the data set directory for more information )
+- **mean** A numeric value which is the mean of the variable in question per activity per subject.
+
+###### end of file.
